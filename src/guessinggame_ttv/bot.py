@@ -1,6 +1,5 @@
 from twitchio.ext import commands
-from guessinggame_ttv.database import (
-    DatabaseManager, UserNotFoundException, RedeemNotFoundException)
+from guessinggame_ttv.database import (DatabaseManager, UserNotFoundException, RedeemNotFoundException)
 from guessinggame_ttv.game import Game
 from guessinggame_ttv.utils import Settings
 
