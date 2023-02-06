@@ -26,13 +26,10 @@ jobs:
           pipenv install --dev
       - name: Lint with Flake8
         run: |
-          pipenv shell
-          flake8 .
+          pipenv run flake8 .
       - name: Lint with MyPy
         run: |
-          pipenv shell
-          mypy .
+          pipenv run mypy .
       - name: Test with Pytest
         run: |
-          pipenv shell
-          pytest
+          pipenv run pytest
