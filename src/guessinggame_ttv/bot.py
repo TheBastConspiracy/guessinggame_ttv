@@ -5,7 +5,7 @@ from guessinggame_ttv.game import Game
 from guessinggame_ttv.utils import Settings
 
 from types import TracebackType
-
+# WAT
 import twitchio
 import re
 import enum

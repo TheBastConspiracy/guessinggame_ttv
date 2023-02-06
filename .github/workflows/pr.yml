@@ -21,13 +21,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pipenv
-          pipenv install --dev --keep-outdated
+          pipenv install --dev
       - name: Lint with Flake8
         run: |
-          flake8 .
+          pipenv run flake8 .
       - name: Lint with MyPy
         run: |
-          mypy .
+          pipenv run mypy .
       - name: Test with Pytest
         run: |
-          pytest
+          pipenv run pytest
