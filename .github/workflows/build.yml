@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        python: '3.10'
+        python: ['3.10']
 
         include:
           - os: 'ubuntu-latest'
@@ -53,8 +53,8 @@ jobs:
 
       - name: Upload archive
         uses: softprops/action-gh-release@v1
-        draft: true
         with:
+          draft: true
           files: |
             dist/*
 
@@ -120,7 +120,7 @@ jobs:
 
       - name: Upload archive
         uses: softprops/action-gh-release@v1
-        draft: true
         with:
+          draft: true
           files: |
             dist/*
